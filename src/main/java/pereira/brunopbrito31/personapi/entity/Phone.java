@@ -19,7 +19,7 @@ public class Phone {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Enumerated(EnumType.STRING)
+    @Enumerated(EnumType.STRING) // para definir o que a informação passada para o banco sera uma string
     @Column(nullable = false)
     private PhoneType type;
 
